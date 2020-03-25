@@ -9,6 +9,7 @@ class Scraper
     page.css("student-card"). each do |student|
       name = student.css("student-name").text 
       location = student.css("student-location").text 
+      profile_url = 
   end
 
   def self.scrape_profile_page(profile_url)
