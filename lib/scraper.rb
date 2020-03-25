@@ -24,6 +24,9 @@ class Scraper
     links = profile_page.css(".social-icon-container").children.css("a").map{|i| i.attr("href").value}
     links.each do |link|
       if link.include?("linkedin")
+        student[:linkedin] =link 
+        elsif 
+        
   end
 
 end
